@@ -1,4 +1,5 @@
 import sys
+import os
 
 '''
 #new package reimports from old package
@@ -27,17 +28,19 @@ Option 1)
 moznost cislo 1: hodit sem prvne aegir a pak az tuhle slozku (tecku nebomezeru stringu) - aneb kdyz to nenajde modul v
 aegir, zkusi to hledat zde..
 '''
-
-
+#get_absolute_path = os.getcwd()
+__path__ = [os.getcwd() + '\\python\\package_redirection\\new_package', __path__[0]]
 
 '''
 Option 2)
 
 dalsi moznost upravit submodule search locations - THIS POSSIBILITy is.. weird.. :D  BUT IT IS WORKING!
+#! It is hardcoded.. Not good at all
 '''
+"""
 __spec__.submodule_search_locations.append(__spec__.submodule_search_locations[0])
 __spec__.submodule_search_locations[0] = 'c:\\dev\\examples\\python\\package_redirection\\new_package'
-
+"""
 '''
 Option 3)
 
