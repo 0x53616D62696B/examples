@@ -16,11 +16,18 @@ If you want to include all modules in this directory with 'from MODULE import *'
 import (bad) practice, you would have to specify it in __all__ list, otherwise 
 it will not import anything if we importing from package.
 '''
-__all__ = ['retained_module']
-#__all__ = ['old_module', 'retained_module']
+
+#__all__ = ['old_module', 'retained_module'] #LIST OF ALL MODULEES YOU WANT TO INCLUDE WITH *
 #__path__ = []
-# moznost cislo 1: hodit sem prvne aegir a pak az tuhle slozku (tecku nebomezeru stringu) - aneb kdyz to nenajde modul v
-# aegir, zkusi to hledat zde..
+
+
+'''
+Option 1)
+
+moznost cislo 1: hodit sem prvne aegir a pak az tuhle slozku (tecku nebomezeru stringu) - aneb kdyz to nenajde modul v
+aegir, zkusi to hledat zde..
+'''
+
 
 
 '''
