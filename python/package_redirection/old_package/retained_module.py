@@ -1,4 +1,5 @@
 import old_package.old_module
+import sys
 
 class try_something:
     def __init__(self):
