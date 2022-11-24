@@ -18,7 +18,11 @@ Start file:
 --------------------
 This file is main executable.
 
+NOTE:
+--------------------
+You have to redirect all subfolders in packages too!
 '''
+
 import old_package.retained_module
 
 instance = old_package.retained_module.RetainedCS()
