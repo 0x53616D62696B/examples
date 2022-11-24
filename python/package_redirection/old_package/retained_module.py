@@ -1,9 +1,14 @@
 import old_package.old_module
+import old_package.old_subpackage.submodule
 import sys
 
-class try_something:
+class RetainedCS:
     def __init__(self):
         pass
-    def hello(self):
-        import_s = old_package.old_module.try_something2()
-        import_s.hello()
+
+    def test_package_redirection(self):
+        instance_package = old_package.old_module.CSToReimport()
+        instance_package.hello()
+
+        instance_subpackage = old_package.old_subpackage.submodule.CSToReimport()
+        instance_subpackage.hello()

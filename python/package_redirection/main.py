@@ -21,6 +21,6 @@ This file is main executable.
 '''
 import old_package.retained_module
 
-instance = old_package.retained_module.try_something()
-instance.hello()
+instance = old_package.retained_module.RetainedCS()
+instance.test_package_redirection()
 
