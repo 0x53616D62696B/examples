@@ -10,6 +10,8 @@ def my_procedure():
 def my_procedure_2():
     some_parameter = 10
     print('This is my procedure NUMBER 2!')
+
+    #NOTE: This is howto write print() similarly to Cpp
     print('Parameter is: %i' %some_parameter)
 
 my_instance = cs_test.feature.FeatureCS()
