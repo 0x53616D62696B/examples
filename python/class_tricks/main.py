@@ -58,3 +58,13 @@ my_instance.run_my_methods(MyProcedures.my_procedure, MyProcedures.my_procedure_
 #my_instance.method_redefined_at_instance_level(self):
 #    pass
 
+'''
+Third method: With class inheritance from Master class (Procedure_Framework class)
+- Procedure is going to be a inheritted class and subtests are going to be methods of the class, with inheritance from 
+  Master class (Procedure_Framework class).
+- Than you may have multiple instances of subclasses of Master class each with slightly different input parameters and
+  each in its own tree node.
+- use encapsulation to prevent changing some parameters   
+
+'''
+
