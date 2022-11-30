@@ -1,7 +1,7 @@
 import sys
 import types
 import inspect
-
+"""
 def function_test():
     print('func test')
 class FeatureCS:
@@ -40,6 +40,7 @@ class FeatureCS:
 function_test()
                 
             
-
+"""
+# implement method 3
             
 
