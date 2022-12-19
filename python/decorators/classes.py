@@ -16,12 +16,14 @@ class ProcedureFramework():
         self.list_of_events = []
         self.dict_of_events = {}
     
-    def append_to_timed_event_list(self, event_function:Callable):
-        #event_instance = TimedEvent(event_function)
-        #self._list_of_events.append(event_instance)
-        self.list_of_events.append(TimedEvent(event_function))
-        #dictionary
-        
-        #! ? what name will this create???
-        #self.dict_of_events.append({event_function.__name__:TimedEvent(self.event_instance)})
-        self.dict_of_events.update({event_function.__name__:TimedEvent(event_function)})
+    #def append_to_timed_event_list(self, event_function:Callable, some_value: int):
+    def append_to_timed_event_list(self, *args, **kwargs): 
+
+        def decorator(func):
+            self.list_of_events.append(TimedEvent(func)) 
+
+            self.dict_of_events.update({func.__name__:TimedEvent(func)})
+
+            print(args[0]) 
+            print('inside the decorator function')
+        return decorator

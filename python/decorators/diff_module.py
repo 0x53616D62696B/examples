@@ -1,8 +1,8 @@
 from classes import ProcedureFramework
 
 first_procedure = ProcedureFramework()
-
-@first_procedure.append_to_timed_event_list
+some_value = 123
+@first_procedure.append_to_timed_event_list(some_value)
 def setup_negative_polarity_event(frameworked_procedure:ProcedureFramework): 
     print("I am decorated function")
     frameworked_procedure.test_var = 10
